@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renart - Product List</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+      @font-face {
+        font-family: 'Avenir';
+        src: url('/fonts/avenir/Avenir-Book.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Montserrat';
+        src: url('/fonts/montserat/Montserrat-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      body { font-family: 'Avenir', 'Montserrat', Arial, sans-serif; }
+      .title {
+        font-family: 'Avenir', Arial, sans-serif;
+        font-size: 2.7rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .title-hr {
+        width: 220px;
+        margin: 0 auto 32px auto;
+        border: none;
+        border-top: 1.5px solid #e0e0e0;
+      }
+      #carousel-wrapper { justify-content: center; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Product List</h1>
+      <hr class="title-hr" />
+      <div class="filters">
+        <label>Min Price: <input type="number" id="minPrice" min="0" step="0.01"></label>
+        <label>Max Price: <input type="number" id="maxPrice" min="0" step="0.01"></label>
+        <label>Min Score: <input type="number" id="minScore" min="0" max="5" step="0.1"></label>
+        <label>Max Score: <input type="number" id="maxScore" min="0" max="5" step="0.1"></label>
+        <button id="filterBtn">Filtrele</button>
+      </div>
+      <div id="carousel-wrapper">
+        <button id="arrow-left" class="arrow">&#60;</button>
+        <div id="carousel"></div>
+        <button id="arrow-right" class="arrow">&#62;</button>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html> 

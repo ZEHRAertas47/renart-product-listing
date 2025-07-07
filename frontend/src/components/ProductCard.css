@@ -1,0 +1,64 @@
+.product-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 24px;
+  margin: 8px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.product-title {
+  font-family: 'Avenir', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.product-price {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+.color-picker {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+}
+.color-dot.selected {
+  border: 2px solid #222;
+}
+.color-label {
+  font-size: 0.9rem;
+  color: #b89b5e;
+  margin-bottom: 8px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+.stars {
+  color: #f5b301;
+  font-size: 1.1rem;
+}
+.score {
+  color: #888;
+  font-size: 0.95rem;
+} 
