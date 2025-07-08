@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 
-const PRODUCTS_PATH = '../products.json';
+const PRODUCTS_PATH = './products.json';
 const GOLD_API_URL = 'https://www.goldapi.io/api/XAU/USD';
 const GOLD_API_KEY = 'goldapi-demo-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'; // Demo key, gerçek anahtar ile değiştirilmeli
 
