@@ -12,7 +12,7 @@ const visibleCount = 4;
 
 async function fetchProducts(params = {}) {
   try {
-    let url = 'http://localhost:3001/api/products';
+    let url = 'https://renart-product-listing.onrender.com/api/products';
     const query = [];
     if (params.minPrice) query.push(`minPrice=${params.minPrice}`);
     if (params.maxPrice) query.push(`maxPrice=${params.maxPrice}`);
